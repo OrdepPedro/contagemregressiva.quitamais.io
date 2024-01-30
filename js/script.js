@@ -27,9 +27,9 @@ const countdown = setInterval(function () {
                 message = "Falta um mês!";
             } else if (days === 7) {
                 message = "Falta uma semana!";
-            } else if (days >= 2) {
-                message = `Faltam ${days} dias!`;
-            } else if (days <= 1) {
+            } else if (days >= 1) {
+                message = `Faltam ${1+days} dias!`;
+            } else if (days < 1) {
                 message = "É amanhã";
             }
         }
